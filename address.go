@@ -607,7 +607,7 @@ type AddressWitnessScriptHash struct {
 	witnessProgram [32]byte
 }
 
-// NewAddressWitnessScriptHash returns a new AddressWitnessPubKeyHash.
+// NewAddressWitnessScriptHash returns a new AddressWitnessScriptHash.
 func NewAddressWitnessScriptHash(witnessProg []byte, net *chaincfg.Params) (*AddressWitnessScriptHash, error) {
 	return newAddressWitnessScriptHash(net.Bech32HRPSegwit, witnessProg)
 }
